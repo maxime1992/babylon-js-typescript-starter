@@ -1,0 +1,13 @@
+{
+  "name": "babylonjs-getting-started",
+  "scripts": {
+    "parcel": "parcel index.html"
+  },
+  "dependencies": {
+    "babylonjs": "3.2.0"
+  },
+  "devDependencies": {
+    "parcel": "1.9.3",
+    "typescript": "2.9.2"
+  }
+}
