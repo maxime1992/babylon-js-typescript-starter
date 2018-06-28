@@ -1,3 +1,5 @@
+import { Game } from './game/game';
+
 declare const module;
 
 // avoid hot reload with Parcel
@@ -8,4 +10,10 @@ if (module.hot) {
   });
 }
 
-console.log(Engine);
+window.addEventListener('DOMContentLoaded', () => {
+  const game: Game = new Game('renderCanvas');
+
+  game.createScene();
+
+  game.doRender();
+});
